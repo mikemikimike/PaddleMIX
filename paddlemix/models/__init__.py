@@ -13,6 +13,7 @@
 # see the license for the specific language governing permissions and
 # limitations under the license.
 
+from .aria import *
 from .audioldm2.configuration import *
 from .audioldm2.modeling import *
 from .blip2.modeling import *
