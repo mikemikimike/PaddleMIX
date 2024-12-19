@@ -2,17 +2,17 @@ import paddle
 from PIL import Image
 from paddlemix.models.aria.modeling_aria import AriaPretrainedModel, AriaForConditionalGeneration
 from paddlemix.processors.processing_aria import AriaProcessor
-from paddlemix.processors.vision_processor import AriaVisionProcessor
+from paddlemix.processors.aria_vision_processor import AriaVisionProcessor
 import json
 
 
 model_id_or_path = 'rhymes-ai/Aria'
 
 config_path = f"{model_id_or_path}/config.json"
-# with open(config_path, 'r') as f:
-#     config = json.load(f)
-#     print("Config loaded successfully:")
-#     print(json.dumps(config, indent=2))
+with open(config_path, 'r') as f:
+    config = json.load(f)
+    print("Config loaded successfully:")
+    print(json.dumps(config, indent=2))
 
 try:
     model = AriaForConditionalGeneration.from_pretrained(model_id_or_path)

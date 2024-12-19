@@ -4,7 +4,7 @@ import logging
 import re
 from typing import List, Optional, Union, Tuple
 from typing import List, Optional, Union
-from .vision_processor import AriaVisionProcessor
+from .aria_vision_processor import AriaVisionProcessor
 from paddlenlp.transformers.processing_utils import ProcessorMixin
 from paddlenlp.transformers.auto.tokenizer import AutoTokenizer
 from paddlenlp.transformers.feature_extraction_utils import BatchFeature
